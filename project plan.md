@@ -1,9 +1,10 @@
 # <한 학기 동안의 프로젝트 계획>
 
-<br/><br/><br/>
-
+<br/><br/>
 ![코드 현실](https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/640/6484d183a1521bae752e2b411aff3759_res.jpeg)
-<br/><br/><br/>
+<br/>
+![내 코드](https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/725/ee8bf15208fb7aa4e6142ab933418471_res.jpeg)
+<br/><br/>
 
 ## 4/6 ~ 4/10(1주차)
 

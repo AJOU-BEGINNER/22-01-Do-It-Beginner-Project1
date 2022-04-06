@@ -2,4 +2,4 @@
 
 ## 프로젝트를 하면서 학습한 내용을 위한 페이지 입니다.
 
-## 원래는 TIL(Today I Learned) 인데, 매일 올린다는 의미가 너무 부담돼서, 살짝 이름을 바꾼 WIL(What I Learned)로 붙였습니다.
+원래는 TIL(Today I Learned) 인데, 살짝 이름을 바꾼 WIL(What I Learned)로 붙였습니다.
