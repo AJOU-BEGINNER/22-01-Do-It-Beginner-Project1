@@ -1,0 +1,22 @@
+{
+  "name": "22-01-do-it-beginner-project1",
+  "version": "1.0.0",
+  "description": "2022년도 1학기 아주대학교 중앙동아리 Do-It 에서 진행하는 FE - 초급  스터디 관리 레포입니다.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-w-nJ/22-01-Do-It-Beginner-Project1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D-w-nJ/22-01-Do-It-Beginner-Project1/issues"
+  },
+  "homepage": "https://github.com/D-w-nJ/22-01-Do-It-Beginner-Project1#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
