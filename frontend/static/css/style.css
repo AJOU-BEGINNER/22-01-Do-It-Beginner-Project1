@@ -1,0 +1,99 @@
+#head{
+    position: absolute;
+    width: 501px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    background: #045D8B;
+}
+#ajouMemo{
+    position: absolute;
+    width: 161px;
+    height: 48px;
+    left: 183px;
+    top: 6px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#sidebar{
+    position: static;
+    left: 12.5%;
+    right: 12.5%;
+    top: 75%;
+    bottom: 25%;
+
+    border: 2px solid #FFFFFF;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+#logInButton{
+    position: absolute;
+    width: 45px;
+    height: 21px;
+    left: 448px;
+    top: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.boardNameInvisual{
+    position: absolute;
+    width: 86px;
+    height: 29px;
+    left: 75px;
+    top: 101px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+.register{
+    position: absolute;
+    width: 57px;
+    height: 21px;
+    left: 370px;
+    top: 101px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}

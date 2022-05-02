@@ -1,8 +1,11 @@
+import Header from "./view/head.js";
+import FreeBoard from "./view/board/freeBoard.js";
+
 const $ = document;
 const root = $.querySelector("#root");
 
-root.innerHTML = `<button id="title" type='button'>AJOU Memo</button>`
-const title = document.getElementById("title");
+Header(root);
+FreeBoard(visual);
 
 //locaion 변경
 
@@ -24,7 +27,7 @@ const renderContents = () =>{
         case "/":
             title.innerHTML = "1";
             break
-        case "/some":
+        case "/main":
             title.innerHTML = "2";
             break
         default:
@@ -40,9 +43,9 @@ window.addEventListener("popstate", ()=> {
 
 // ajou memo 클릭-> 화면전환
 
-title.addEventListener("click", () => {
+ajouMemo.addEventListener("click", () => {
 
-    const targetUrl = "/some";
+    const targetUrl = "/main";
     const { pathname } = window.location;
 
     if (targetUrl === pathname) {
@@ -51,7 +54,7 @@ title.addEventListener("click", () => {
 
     const locationChangedEvent = new CustomEvent("locationChange",{
         composed: true,
-        detail: {href: "some"}
+        detail: {href: "main"}
     });
     window.dispatchEvent(locationChangedEvent);
 });
