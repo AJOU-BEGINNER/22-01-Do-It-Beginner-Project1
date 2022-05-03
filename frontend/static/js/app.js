@@ -1,10 +1,12 @@
 import Header from "./view/head.js";
 import FreeBoard from "./view/board/freeBoard.js";
+import SideBar from "./view/sideBAr.js";
 
 const $ = document;
 const root = $.querySelector("#root");
 
 Header(root);
+SideBar(root);
 FreeBoard(visual);
 
 //locaion 변경
