@@ -14,4 +14,19 @@ export default function FreeBoard(root){
 
     freeboard.appendChild(boardName);
     freeboard.appendChild(register);
+
+    const listBox = $.createElement('div');
+    listBox.className = 'listBox';
+
+    for(var i=0; i<5;i++){
+        const listBar = $.createElement('div');
+        listBar.className = `listBar${i}`;
+        listBox.appendChild(listBar);
+    }
+    freeboard.appendChild(listBox);
+
+    // var freeList = [];
+    // for(var i=0; i<freeList.length;i++){
+        
+    // }
 }
