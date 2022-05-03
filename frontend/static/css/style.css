@@ -1,3 +1,6 @@
+.hidden{
+    display: none;
+}
 #head{
     position: absolute;
     width: 501px;
@@ -96,4 +99,65 @@
     text-align: center;
 
     color: #000000;
+    border : 1px solid;
+    }
+#sideBar{
+    position: absolute;
+    width: 178px;
+    height: 564px;
+    left: 0px;
+    top: 60px;
+
+    background: #CFDAFF;
 }
+#inSideBar{
+    position: absolute;
+    width: 129px;
+    height: 274px;
+    left: 29px;
+    top: 77px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+[class*="line"]{
+    position: relative;
+    width: 104px;
+    height: 0px;
+    left: 15px;
+    border: 1px solid #045D8B;
+}
+.listBox{
+    position: absolute;
+    width: 350px;
+    height: 359px;
+    left: 75px;
+    top: 146px;
+
+    background: #FFFFFF;
+    border: 1px solid #045D8B;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+[class*='listBar']{
+    position: absolute;
+    width: 347px;
+    height: 0px;
+    left: 0px;
+
+    border: 1px solid #045D8B;
+}
+.listBar0{top:60px;}
+.listBar1{top:120px;}
+.listBar2{top:180px;}
+.listBar3{top:240px;}
+.listBar4{top:300px;}
