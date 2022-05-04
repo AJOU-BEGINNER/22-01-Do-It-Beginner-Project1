@@ -82,7 +82,7 @@
     color: #000000;
 
 }
-.register{
+[class*="register"]{
     position: absolute;
     width: 57px;
     height: 21px;
@@ -161,3 +161,12 @@
 .listBar2{top:180px;}
 .listBar3{top:240px;}
 .listBar4{top:300px;}
+.content{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 100px;
+    top: 170px;
+
+    font-size: 100px;
+}
