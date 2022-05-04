@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <!-- Webpage Title -->
+        <title>로그인 페이지 | 두잇 초급반</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                showReview();
+            });
+
+            function makeReview() {
+                $.ajax({
+                    type: "POST",
+                    url: "/review",
+                    data: {sample_give:'샘플데이터'},
+                    success: function (response) {
+                        alert(response["msg"]);
+                        window.location.reload();
+                    }
+                })
+            }
+
+            function showReview() {
+                $.ajax({
+                    type: "GET",
+                    url: "/review?sample_give=샘플데이터",
+                    data: {},
+                    success: function (response) {
+                        alert(response["msg"]);
+                    }
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+                <div class="rectangle1">
+                    <div class="icon">
+                        <div class="vector"></div>
+                        <div class="vector1"></div>
+                        <div class="vector2"></div>
+                        <h4 class="memo">AJOU Memo</h4>
+                        <h4 class="login"> Log In</h4>
+                    </div>
+                </div>
+            </div>
+                <div class="rectangle80"><h5 class="word2">ID를 입력하시오.</h5></div>
+                <div class="rectangle81"><h5 class="word3">나가기</h5></div>
+                <div class="rectangle82"><h5 class="word4">회원가입</h5></div>
+    </body>
+</html>
