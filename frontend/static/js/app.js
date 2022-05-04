@@ -1,13 +1,13 @@
 import Header from "./view/head.js";
-import FreeBoard from "./view/board/freeBoard.js";
-import SideBar from "./view/sideBAr.js";
+import MakeContents from "./view/contents.js";
+import SideBar from "./view/sideBar.js";
 
 const $ = document;
 const root = $.querySelector("#root");
 
 Header(root);
 SideBar(root);
-FreeBoard(visual);
+MakeContents(visual,'free','자유');
 
 //locaion 변경
 
@@ -27,13 +27,24 @@ const renderContents = () =>{
     const { pathname } = window.location;
     switch (pathname) {
         case "/":
-            title.innerHTML = "1";
+            MakeContents(visual,'free','자유');
+        case "/free":
+            MakeContents(visual,'free','자유');
             break
-        case "/main":
-            title.innerHTML = "2";
+        case "/secret":
+            MakeContents(visual,'secret','비밀');
+            break
+        case "/info":
+            MakeContents(visual,'info','정보');
+            break
+        case "/prom":
+            MakeContents(visual,'prom','홍보');
+            break
+        case "/sw":
+            MakeContents(visual,'sw','SW');
             break
         default:
-            title.innerHTML = "<div>404</div>"
+            root.innerHTML = "<div>404</div>"
     }
 }
 
@@ -43,20 +54,52 @@ window.addEventListener("popstate", ()=> {
     renderContents();
 })
 
-// ajou memo 클릭-> 화면전환
+//사이드바에 있는 게시판 이름 누르면 주소바뀜 and 화면전환(게시판이동), 게시판 이동될 때 사이드바 사라짐
 
-ajouMemo.addEventListener("click", () => {
+const freeButton = $.getElementById(`BoardName0`);
+const secretButton = $.getElementById(`BoardName1`);
+const infoButton = $.getElementById(`BoardName2`);
+const promButton = $.getElementById(`BoardName3`);
+const swButton = $.getElementById(`BoardName4`);
 
-    const targetUrl = "/main";
-    const { pathname } = window.location;
-
-    if (targetUrl === pathname) {
-        return;
+ajouMemo.addEventListener("click",()=>{
+    rendering('free');
+    if(sideBar.classList = "hidden"){
+        console.log("aa");
+    }else{
+        sideBar.classList.toggle("hidden");
     }
+});
+freeButton.addEventListener("click",()=>{
+    rendering('free');
+    sideBar.classList.toggle("hidden");
+});
+secretButton.addEventListener("click",()=>{
+    rendering('secret');
+    sideBar.classList.toggle("hidden");
+});
+infoButton.addEventListener("click",()=>{
+    rendering('info');
+    sideBar.classList.toggle("hidden");
+});
+promButton.addEventListener("click",()=>{
+    rendering('prom');
+    sideBar.classList.toggle("hidden");
+});
+swButton.addEventListener("click",()=>{
+    rendering('sw');
+    sideBar.classList.toggle("hidden");
+});
 
-    const locationChangedEvent = new CustomEvent("locationChange",{
-        composed: true,
-        detail: {href: "main"}
+function rendering(root){
+    const targetUrl = `/${root}`;
+    const { pathname } = window.location;
+    if (targetUrl === pathname) {
+            return;
+        }
+        const locationChangedEvent = new CustomEvent("locationChange",{
+            composed: true,
+            detail: {href: `${root}`}
     });
     window.dispatchEvent(locationChangedEvent);
-});
+}

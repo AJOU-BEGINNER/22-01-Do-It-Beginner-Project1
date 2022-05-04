@@ -17,7 +17,7 @@ export default function SideBar(root){
     for (var i=0; i<boardArr.length; i++){
         const boardButton = $.createElement(`p`);
         boardButton.innerHTML += boardArr[i];
-        boardButton.className = `BoardName${i}`;
+        boardButton.id = `BoardName${i}`;
         inSideBar.appendChild(boardButton);
         const line = $.createElement('div');
         line.className = `line${i}`;
