@@ -7,7 +7,6 @@ export default function Header(root){
     const ajouMemo = $.createElement('div');
     ajouMemo.innerHTML = 'AJOU Memo';
     ajouMemo.id = 'ajouMemo';
-    // ajouMemo.addEventListener('click', --)
 
     const sidebar = $.createElement('img');
     sidebar.src = 'Icon.png';

@@ -82,7 +82,7 @@
     color: #000000;
 
 }
-[class*="register"]{
+#register{
     position: absolute;
     width: 57px;
     height: 21px;
@@ -169,4 +169,88 @@
     top: 170px;
 
     font-size: 100px;
+}
+#posting{
+    position: absolute;
+    width: 391px;
+    height: 465px;
+    left: 57px;
+    top: 94px;
+
+    background: #FFFFFF;
+    border: 1px solid #045D8B;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#selectBoard{
+    position: absolute;
+    width: 334px;
+    height: 46px;
+    left: 17px;
+    top: 36px;
+
+    /* border: 1px solid #000000;
+    box-sizing: border-box; */
+}
+[class*='enteringTitle']{
+    position: absolute;
+    width: 326px;
+    height: 42px;
+    left: 17px;
+    top: 92px;
+}
+[class*='enteringContent']{
+    position: absolute;
+    width: 326px;
+    height: 284px;
+    left: 17px;
+    top: 148px;
+}
+.enteringID{
+    position: absolute;
+    width: 331px;
+    height: 83px;
+    left: 87px;
+    top: 152px;
+
+    background: #FFFFFF;
+    border: 1px solid #045D8B;
+}
+#signUp{
+    position: absolute;
+    width: 158px;
+    height: 47px;
+    left: 88px;
+    top: 258px;
+
+    background: #045D8B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#loginPagein{
+    position: absolute;
+    width: 158px;
+    height: 47px;
+    left: 260px;
+    top: 258px;
+
+    background: #045D8B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
 }

@@ -1,6 +1,8 @@
 import Header from "./view/head.js";
 import MakeContents from "./view/contents.js";
 import SideBar from "./view/sideBar.js";
+import Posting from "./view/posting.js";
+import LogInPage from "./view/logIn.js";
 
 const $ = document;
 const root = $.querySelector("#root");
@@ -42,6 +44,12 @@ const renderContents = () =>{
             break
         case "/sw":
             MakeContents(visual,'sw','SW');
+            break
+        case "/posting":
+            Posting(visual);
+            break
+        case "/login":
+            LogInPage(visual);
             break
         default:
             root.innerHTML = "<div>404</div>"
@@ -90,6 +98,17 @@ swButton.addEventListener("click",()=>{
     rendering('sw');
     sideBar.classList.toggle("hidden");
 });
+
+//등록하기 누르면 화면전환 =>글쓰기 페이지렌더링
+const registerButton = $.querySelector("#register");
+registerButton.addEventListener("click",()=>rendering('posting'));
+
+//로그인 누르면 화면전환 =>로그인 페이지렌더링
+const loginButton = $.querySelector("#logInButton");
+loginButton.addEventListener("click",()=>rendering('login'));
+
+
+//주소바꿈 + 렌더링함수실행
 
 function rendering(root){
     const targetUrl = `/${root}`;

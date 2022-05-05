@@ -10,7 +10,7 @@ export default function MakeContents(root,kind,kindInKorean){
 
     const register = $.createElement('div');
     register.innerHTML = '등록하기';
-    register.className = `register${kind}`;
+    register.id = `register`;
 
     board.appendChild(boardName);
     board.appendChild(register);
