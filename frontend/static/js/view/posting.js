@@ -16,7 +16,6 @@ export default function Posting(root){
     selectBoard.innerHTML += `<option value = 'info'>정보게시판</option>`;
     selectBoard.innerHTML += `<option value = 'prom'>홍보게시판</option>`;
     selectBoard.innerHTML += `<option value = 'sw'>SW게시판</option>`;
-    // selectBoard.onchange = "";
     posting.appendChild(selectBoard);
 
     const enteringTitle = $.createElement("input");

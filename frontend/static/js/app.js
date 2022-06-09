@@ -60,6 +60,7 @@ const renderContents = () =>{
 
 window.addEventListener("popstate", ()=> {
     renderContents();
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
 })
 
 //사이드바에 있는 게시판 이름 누르면 주소바뀜 and 화면전환(게시판이동), 게시판 이동될 때 사이드바 사라짐
@@ -72,6 +73,7 @@ const swButton = $.getElementById(`BoardName4`);
 
 ajouMemo.addEventListener("click",()=>{
     rendering('free');
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
     if(sideBar.classList = "hidden"){
         console.log("aa");
     }else{
@@ -81,22 +83,27 @@ ajouMemo.addEventListener("click",()=>{
 freeButton.addEventListener("click",()=>{
     rendering('free');
     sideBar.classList.toggle("hidden");
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
 });
 secretButton.addEventListener("click",()=>{
     rendering('secret');
     sideBar.classList.toggle("hidden");
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
 });
 infoButton.addEventListener("click",()=>{
     rendering('info');
     sideBar.classList.toggle("hidden");
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
 });
 promButton.addEventListener("click",()=>{
     rendering('prom');
     sideBar.classList.toggle("hidden");
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
 });
 swButton.addEventListener("click",()=>{
     rendering('sw');
     sideBar.classList.toggle("hidden");
+    $.querySelector("#register").addEventListener("click",()=>rendering('posting'));
 });
 
 //등록하기 누르면 화면전환 =>글쓰기 페이지렌더링
