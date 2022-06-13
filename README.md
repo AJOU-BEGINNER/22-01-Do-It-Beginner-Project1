@@ -3,6 +3,8 @@
 참여자 정두원 프로젝트 결과
 
 깃허브 주소 : D-w-nJ
+fe-4조 회의내용
+https://www.notion.so/57c2a5d706cd4672a3c845e85bbd4a88?v=df1ae8d2252147dc9c9ed7bc2dfa8334
 
 1. 메인페이지 ![image](https://user-images.githubusercontent.com/96522218/173294850-298f4bd9-cad1-4542-9ea0-30d9382ab61a.png)
 
