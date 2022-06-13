@@ -24,28 +24,43 @@
         <script type="text/javascript">
 
             $(document).ready(function () {
-                showReview();
+                showData();
             });
+            function makeData() {
+                let board = $('#board').val()
+                let title = $('#title').val()
+                let content = $('#content').val()
 
-            function makeReview() {
                 $.ajax({
                     type: "POST",
-                    url: "/review",
-                    data: {sample_give:'샘플데이터'},
+                    url: "/write",
+                    data: {board_give: board,title_give: title,content_give: content},
                     success: function (response) {
                         alert(response["msg"]);
-                        window.location.reload();
+                        window.location.href ='/mainpage';
                     }
                 })
             }
 
-            function showReview() {
+            function showData() {
                 $.ajax({
                     type: "GET",
-                    url: "/review?sample_give=샘플데이터",
+                    url: "/detailpage",
                     data: {},
                     success: function (response) {
-                        alert(response["msg"]);
+                        let datas = response['all_datas']
+                        for (let i = 0; i < datas.length; i++) {
+                            let board = datas[i]['board']
+                            let title = datas[i]['title']
+                            let content = datas[i]['content']
+
+                            let temp_html = `<tr>
+                                                <td>${board}</td>
+                                                <td>${title}</td>
+                                                <td>${content}</td>
+                                               </tr>`
+                            $('#datas-box').append(temp_html)
+                        }
                     }
                 })
             }
@@ -58,22 +73,17 @@
                         <div class="vector"></div>
                         <div class="vector1"></div>
                         <div class="vector2"></div>
-                        <h4 class="memo">AJOU Memo</h4>
-                        <h4 class="login"> Log In</h4>
+                        <a href="javascript:window.location.href ='/mainpage'"><h4 class="memo">AJOU Memo</h4></a>
+                        <a href="javascript:window.location.href ='/loginpage'"><h4 class="login"> Log In</h4></a>
                     </div>
                 </div>
             <div class="rectangle15">
-            <div class="rectangle20">
-                <h3 class="title">게시판을 선택해 주세요</h3>
-            </div>
-                <div class="rectangle19">
-                <h3 class="title">제목을 입력해 주세요</h3>
-            </div>
-            <div class="rectangle24">
-                <h3 class="title">내용</h3>
+            <input type="text" id="board" placeholder="게시판을 선택해 주세요" class="rectangle20"><h3 class="title"></h3>
+                <input type="text" id="title" placeholder="제목을 입력해 주세요" class="rectangle19"><h3 class="title"></h3>
+                <input type="text" id="content" placeholder="내용" class="rectangle24"><h3 class="title"></h3>
+                    <button onclick="makeData()" class="rectangle22">등록</button>
             </div>
                 </div>
-                <div class="rectangle22"><h3 class="button">등록</h3></div>
         </div>
     </body>
 </html>

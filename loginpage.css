@@ -435,25 +435,25 @@ h5 {
 }
 .rectangle81 {
     position: absolute;
-    width: 158px;
-    height: 47px;
-    left: 88px;
+    width: 170px;
+    height: 70px;
+    left: 50px;
     top: 258px;
 
     background: #045D8B;
 }
 .rectangle82 {
     position: absolute;
-    width: 158px;
+    width: 170px;
     height: 47px;
-    left: 260px;
+    left: 220px;
     top: 258px;
 
     background: #045D8B;
 }
 .word3 {
     position: absolute;
-    width: 109px;
+    width: 130px;
     height: 25px;
     margin: 15px 50px;
     font-family: 'Roboto';
@@ -466,9 +466,9 @@ h5 {
 }
 .word4 {
 position: absolute;
-    width: 121px;
-    height: 23px;
-    margin: 15px 55px;
+    width: 130px;
+    height: 25px;
+    margin: 15px 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
