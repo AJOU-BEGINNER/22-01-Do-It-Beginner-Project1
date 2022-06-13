@@ -9,7 +9,7 @@ export default function Header(root){
     ajouMemo.id = 'ajouMemo';
 
     const sidebar = $.createElement('img');
-    sidebar.src = 'Icon.png';
+    sidebar.src = "Icon.png";
     sidebar.id = "sidebar";
 
     const logInButton = $.createElement('div');

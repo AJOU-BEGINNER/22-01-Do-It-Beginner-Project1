@@ -26,6 +26,8 @@ export default function MakeContents(root,kind,kindInKorean){
 
     const content = $.createElement('div');
     content.className = 'content';
-    content.innerHTML=`${kindInKorean}`;
+    for(var i=0; i<6;i++){
+        content.innerHTML += `<div id="content${i+1}">${i+1}번째 ${kindInKorean}게시판 게시물</div>`
+    }
     root.appendChild(content);
 }

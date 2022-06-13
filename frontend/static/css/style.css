@@ -163,12 +163,102 @@
 .listBar4{top:300px;}
 .content{
     position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 100px;
-    top: 170px;
+    width: 180px;
+    height: 25px;
+    left: 178px;
+    top: 172px;
 
-    font-size: 100px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+#content1{
+    position: absolute;
+    width: 180px;
+    height: 25px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+#content2{
+    position: absolute;
+    width: 180px;
+    height: 25px;
+    top: 60px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+#content3{
+    position: absolute;
+    width: 180px;
+    height: 25px;
+    top: 120px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+#content4{
+    position: absolute;
+    width: 180px;
+    height: 25px;
+    top: 180px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+#content5{
+    position: absolute;
+    width: 180px;
+    height: 25px;
+    top: 240px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+#content6{
+    position: absolute;
+    width: 180px;
+    height: 25px;
+    top: 300px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
 }
 #posting{
     position: absolute;
