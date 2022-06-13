@@ -1,3 +1,11 @@
+#메인페이지
+![image](https://user-images.githubusercontent.com/102967319/173368352-5e510340-a770-4f86-ac47-2c26d903115e.png)
+
+#메뉴 화면
+![image](https://user-images.githubusercontent.com/102967319/173368459-5add4363-8d56-413d-9dac-aef66fd4d393.png)
+
+
+
 # 22-01-Do-It-Project1
 2022년도 1학기 아주대학교 중앙동아리 Do-It 에서 진행하는 FE - 초급  스터디 관리 레포입니다.
 
