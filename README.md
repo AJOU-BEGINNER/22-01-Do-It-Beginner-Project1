@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/102967319/173368352-5e510340-a770-4f86-ac47-2c26d903115e.png)
 
 #메뉴 화면
-![image](https://user-images.githubusercontent.com/102967319/173368459-5add4363-8d56-413d-9dac-aef66fd4d393.png)
+![image](https://user-images.githubusercontent.com/102967319/173368650-d9713d8d-b4d3-44a5-8fae-257c6cbbfcee.png)
 
 
 
